@@ -31,5 +31,11 @@
     "serve-favicon": "^2.5.0",
     "supertest": "^6.1.6",
     "tape": "^5.4.0"
+  },
+  "devDependencies": {
+    "jasmine-core": "^4.0.0",
+    "karma": "^6.3.9",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^4.0.1"
   }
 }
