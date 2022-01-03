@@ -1,0 +1,20 @@
+coupon-management/
+├──app/
+│      ├── controllers/* APP Controller folder
+│      │                 └── auth.js  * auth controller file 
+│      │                 └── coupons.js  * coupons controller file
+                         └── discounts.js  * discounts controller file 
+│      ├── models/  * APP Model folder
+│      │                  └── coupon.js  * coupon model file   
+│      │                  └── discount.js  * discount model file
+│      ├── routes/  * APP route folder
+│      │                  └──routes.js  * route file  
+│      │  
+├── app.js   * Db connection file
+├── config.js   * Environnement variables
+├── express.js   * Express app entrypoint
+├── server.js  * APP server file
+│      │
+├── package.json  * Defines our JavaScript dependencies
+├── package-lock.json  * ----------
+

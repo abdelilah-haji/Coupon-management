@@ -1,19 +1,9 @@
 // 'use strict';
 
-// https://github.com/substack/tape
 
-// var test = require('tape');
-// var request = require('supertest');
+var test = require('tape');
+var request = require('supertest');
 
-// test('Codegenerator', function (t) {
-// 	var codegenerator = require('./app/lib/codegenerator');
-// 	t.plan(3);
-// 	t.equal(codegenerator.generateCode(0), 'ba');
-// 	t.equal(codegenerator.generateCode(20000), 'bibaba');
-// 	t.equal(codegenerator.generateCode(12345678), 'fakiqevo');
-// 	t.equal(codegenerator.generateCode(1000000), 'fakiqevo');
-// 	t.end();
-// });
 
 test('Correct coupons returned', function (t) {
 	var app = require('../app/app');
@@ -30,3 +20,4 @@ test('Correct coupons returned', function (t) {
 		app.closeDatabase();
 	});
 });
+

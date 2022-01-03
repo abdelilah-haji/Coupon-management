@@ -1,6 +1,4 @@
-var express = require('express');
-var glob = require('glob');
-var favicon = require('serve-favicon');
+
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
@@ -21,7 +19,7 @@ module.exports = function (app, config) {
 	app.use(cors());
 
 	// Routing
-	require('./routes')(app, config);
+	require('./routes/routes')(app, config);
 
 	app.use(function (req, res, next) {
 		var err = new Error('Not Found');
